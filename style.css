@@ -239,7 +239,7 @@ button:hover {
   text-align: center;
   letter-spacing: 2px;
   text-shadow:
-    0 0 5px #fff,
+    0 0 5px #f4e58f,
     0 0 15px rgba(255, 215, 0, 0.8),
     0 0 30px rgba(255, 0, 0, 0.6);
   margin-bottom: 10px;
