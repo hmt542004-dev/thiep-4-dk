@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #a80000, #d10000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+ 
+
+
+/* Thiệp */
+.card {
+  background: linear-gradient(135deg, #f7d774, #ffe9a8);
+  padding: 8px;
+  border-radius: 28px;
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.4),
+    inset 0 0 10px rgba(255,215,0,0.6);
+    
+}
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: -120px;
+  background: radial-gradient(circle, rgba(255,215,0,0.15), transparent 70%);
+  z-index: -1;
+}
+
+
+.border {
+  background: #b30000;
+  border-radius: 22px;
+  padding: 40px 30px;
+  width: 380px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Tiêu đề */
+h1 {
+  color: #ffd700;
+  font-size: 28px;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.name {
+  color: #ffdd55;
+}
+
+/* Trang trí */
+.ornament {
+  color: #ffd700;
+  margin-bottom: 25px;
+  font-size: 18px;
+  letter-spacing: 6px;
+}
+
+/* Nút */
+button {
+  background: linear-gradient(135deg, #ffd700, #ffb700);
+  border: none;
+  color: #8b0000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Lời chúc */
+.wish {
+  margin-top: 28px;
+  animation: fadeUp 0.8s ease;
+}
+
+.wish p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.signature {
+  margin-top: 20px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hiệu ứng */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.corner {
+  position: absolute;
+  font-size: 26px;
+  color: #ffd700;
+  opacity: 0.9;
+}
+
+.border {
+  position: relative;
+}
+
+/* Vị trí */
+.top-left {
+  top: 12px;
+  left: 14px;
+}
+
+.top-right {
+  top: 12px;
+  right: 14px;
+}
+
+.bottom-left {
+  bottom: 12px;
+  left: 14px;
+}
+
+.bottom-right {
+  bottom: 12px;
+  right: 14px;
+}
+.hanging {
+  color: #ffdd55;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  background: linear-gradient(180deg, #fff2b0, #ffd700, #ffb700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.wish p {
+  line-height: 1.8;
+}
+button {
+  background: linear-gradient(180deg, #ffd700, #ffb700);
+  color: #a00000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px rgba(0,0,0,0.35);
+}
+.wish p {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.wish p {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #ffe9a8;
+  text-align: center;
+}
+.message {
+  line-height: 1.6;   /* giảm khoảng cách dòng */
+  text-align: justify;
+  font-style: italic;
+}
+.highlight {
+  font-weight: 600;     /* không quá đậm */
+  color: #ffd700;       /* vàng nhẹ theo tone thiệp */
+}
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #ffd700; /* vàng kim */
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 15px rgba(255, 215, 0, 0.8),
+    0 0 30px rgba(255, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+.receiver {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: #fff1c1;
+  text-align: center;
+  margin: 20px 0 30px;
+  letter-spacing: 1px;
+}
+
+
