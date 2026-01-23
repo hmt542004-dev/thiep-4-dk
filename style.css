@@ -42,8 +42,6 @@ body {
   overflow: visible;
 }
 
-
-
 .card::before {
   content: "";
   position: absolute;
@@ -98,6 +96,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   transition: 0.25s;
+
 }
 
 button:hover {
@@ -118,7 +117,7 @@ button:hover {
 
 .signature {
   margin-top: 20px;
-  font-size: 13px;
+  font-size: 18px;
   opacity: 0.9;
 }
 
