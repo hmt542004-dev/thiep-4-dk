@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 02px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: 1px;
 }
 
 .title {
