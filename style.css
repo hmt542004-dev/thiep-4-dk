@@ -11,6 +11,7 @@ body {
   background: #b80000;
   display: flex;
   padding: 16px;  
+  
 }
 
 .title {
@@ -35,7 +36,15 @@ body {
   box-shadow:
     0 25px 60px rgba(0,0,0,0.4),
     inset 0 0 10px rgba(255,215,0,0.6);
-    
+    .decor {
+  position: absolute;
+  width: 100px;          /* chỉnh theo mắt */
+  pointer-events: none;  /* không che nội dung */
+  opacity: 0.85;         /* ẩn nhẹ cho sang */
+}
+
+/* Góc phải trên – giữ nguyên */
+
 }
 .card {
   position: relative;
@@ -251,4 +260,24 @@ button:hover {
   letter-spacing: 1px;
 }
 
+/* ===== Trang trí góc thiệp ===== */
+.decor {
+  position: absolute;
+  width: 90px;          /* nhỏ gọn hơn */
+  opacity: 0.75;        /* vàng ẩn – sang */
+  pointer-events: none;
+  z-index: 1;
+}
 
+/* Góc phải trên */
+.decor-right-top {
+  top: 14px;
+  right: 14px;
+}
+
+/* Góc trái trên – xoay ngược */
+.decor-left-top {
+  top: 14px;
+  left: 14px;
+  transform: scaleX(-1);
+}
