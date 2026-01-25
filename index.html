@@ -29,7 +29,7 @@
   <h2 class="receiver"><u>Gởi đến:</u> <span class="name">Đào Duy Khương</span></h2> 
     <button id="openBtn" onclick="openCard()" class="tet-btn">Mở thiệp Tết 🧧</button>
    <div id="wish" class="wish hidden">
-  <p style="text-align: justify; font-style: italic; line-height: 1.8; font-size: 19px;">
+  <p style="text-align: justify; font-style: italic; line-height: 1.8; font-size: 20px;">
     Năm mới sắp đến òii,🌸 <br> 
     &nbsp;&nbsp;&nbsp;&nbsp;🌼Tui chúc ông có thật nhiều sức khỏe,
     luôn bình an và vui vẻ nha!<br>
@@ -44,7 +44,7 @@
     src="Chukytay.png"
     alt="Chữ ký Hà Minh Thi"
     style="
-      width:120px;
+      width:130px;
       display: inline-block;
       filter: drop-shadow(0 2px 4px rgba(255,215,0,0.5));
       opacity: 0.95;
@@ -55,7 +55,7 @@
 <style>
   .highlight-right {
   text-align: right;
-  padding: 6px 14px;
+  padding: 0px 16px;
   border-right: 4px solid #f1cb42;
   font-style: italic;
 
@@ -66,7 +66,41 @@
 </style>
 
   </p>
-  <button class="close-btn"  class="tet-btn" onclick="closeCard()" style=" font: 20px;">Đóng thiệp ❀</button>
+ <button 
+  onclick="closeCard()"
+  style="
+    background: linear-gradient(180deg, #b30000, #8f0000);
+    color: #ffd966;
+    font-size: 20px;
+    margin-top: 20px;
+     margin-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+    padding: 12px 34px;
+    border-radius: 28px;
+    border: 1.5px solid #f1cb42;
+    cursor: pointer;
+
+    box-shadow:
+      0 6px 14px rgba(0,0,0,0.35),
+      inset 0 1px 1px rgba(255,215,0,0.35);
+    transition: all 0.25s ease;
+  "
+  onmouseover="
+    this.style.transform='translateY(-1px)';
+    this.style.boxShadow='0 10px 20px rgba(0,0,0,0.45), inset 0 1px 2px rgba(255,215,0,0.5)';
+  "
+  onmouseout="
+    this.style.transform='none';
+    this.style.boxShadow='0 6px 14px rgba(0,0,0,0.35), inset 0 1px 1px rgba(255,215,0,0.35)';
+  "
+>
+  ❀ Đóng thiệp ❀
+</button>
+
   <div class="signature">
     
     <span style="font-family: 'Cormorant Garamond', serif; font-style: italic;font-size: 22px;">
