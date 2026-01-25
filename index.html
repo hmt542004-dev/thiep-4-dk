@@ -26,35 +26,54 @@
 <div class="corner bottom-left">✿</div>
 <div class="corner bottom-right">✿</div>
    <h1 class="title">Chúc Mừng Năm Mới</h1>
-  <h2 class="receiver">Gởi đến <span class="name">Đào Duy Khương</span></h2> 
-    <button id="openBtn" onclick="openCard()">Mở thiệp Tết 🧧</button>
+  <h2 class="receiver"><u>Gởi đến:</u> <span class="name">Đào Duy Khương</span></h2> 
+    <button id="openBtn" onclick="openCard()" class="tet-btn">Mở thiệp Tết 🧧</button>
    <div id="wish" class="wish hidden">
-  <p style="text-align: justify; font-style: italic; line-height: 1.8;">
+  <p style="text-align: justify; font-style: italic; line-height: 1.8; font-size: 19px;">
     Năm mới sắp đến òii,🌸 <br> 
     &nbsp;&nbsp;&nbsp;&nbsp;🌼Tui chúc ông có thật nhiều sức khỏe,
-    luôn bình an và vui vẻ nha.<br>
+    luôn bình an và vui vẻ nha!<br>
 
     &nbsp;&nbsp;&nbsp;&nbsp;Mong rằng trong năm <span class="highlight">2026</span>,
     mọi dự định của ông sẽ diễn ra suôn sẻ,
-    và luôn gặp nhiều may mắn nhé.✨<br> 
+    và luôn gặp nhiều may mắn nhé. Tui chỉ làm được những việc này để mong ông vui thoii✨<br> 
 
-  &nbsp;&nbsp;&nbsp;&nbsp;❤️Hi vọng ông luôn hạnh phúc!
-  <p style="text-align: right;" class="highlight-right">30/01/2026</p>
+  <strong>&nbsp;&nbsp;&nbsp;&nbsp;❤️Hi vọng ông luôn hạnh phúc!</strong>
+  <p class="highlight-right">
+  <img 
+    src="Chukytay.png"
+    alt="Chữ ký Hà Minh Thi"
+    style="
+      width:120px;
+      display: inline-block;
+      filter: drop-shadow(0 2px 4px rgba(255,215,0,0.5));
+      opacity: 0.95;
+    "
+  >
+</p>
 
 <style>
   .highlight-right {
-    text-align: right;
-    padding: 10px 14px;
-    background: rgba(192, 57, 43, 0.08);
-    border-right: 4px solid #f1cb42;
-    font-style: italic;
-  }
+  text-align: right;
+  padding: 6px 14px;
+  border-right: 4px solid #f1cb42;
+  font-style: italic;
+
+  display: flex;
+  justify-content: flex-end; /* 👈 đẩy chữ ký sát lề phải */
+}
+
 </style>
-<br>
+
   </p>
-  <button class="close-btn" onclick="closeCard()">Đóng thiệp ❀</button>
+  <button class="close-btn"  class="tet-btn" onclick="closeCard()" style=" font: 20px;">Đóng thiệp ❀</button>
   <div class="signature">
-   <b>— Gởi từ:</b>  <span class="highlight"><b>Hà Minh Thi</b></span> —
+    
+    <span style="font-family: 'Cormorant Garamond', serif; font-style: italic;font-size: 22px;">
+ — <span class="highlight"><b>Gởi từ</b></span>    <b>Hà Minh Thi</b> —
+</span>
+
+   
   </div>
 </div>
   </div>

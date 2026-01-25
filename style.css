@@ -13,7 +13,6 @@ body {
   padding: 16px;  
   
 }
-
 .title {
   font-family: 'Dancing Script', cursive;
   font-size: clamp(34px, 6vw, 46px);
@@ -26,8 +25,6 @@ body {
 
   margin-bottom: 18px;
 }
-
-
 /* Thiệp */
 .card {
   background: linear-gradient(135deg, #f7d774, #ffe9a8);
@@ -280,4 +277,123 @@ button:hover {
   top: 14px;
   left: 14px;
   transform: scaleX(-1);
+}
+/* Nút Mở / Đóng thiệp */
+.tet-btn {
+  background: linear-gradient(145deg, #8b0000, #b80000);
+  color: #ffd966;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 40px;
+  border: 1.5px solid rgba(255, 215, 0, 0.7);
+  cursor: pointer;
+  letter-spacing: 0.8px;
+
+  box-shadow:
+    0 10px 22px rgba(0,0,0,0.35),
+    inset 0 0 10px rgba(255,215,0,0.25);
+
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ánh kim chạy nhẹ */
+.tet-btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,215,0,0.35),
+    transparent
+  );
+  transform: rotate(20deg);
+  transition: 0.6s;
+}
+
+.tet-btn:hover::before {
+  left: 120%;
+}
+
+.tet-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 16px 30px rgba(0,0,0,0.45),
+    0 0 18px rgba(255,215,0,0.6);
+}
+
+/* khi bấm */
+.tet-btn:active {
+  transform: scale(0.96);
+}
+.close-btn {
+  background: transparent;
+  color: #ffd966;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  padding: 10px 26px;
+  border-radius: 30px;
+  border: 1.2px solid rgba(255, 217, 102, 0.5);
+  cursor: pointer;
+  letter-spacing: 0.6px;
+
+  box-shadow: inset 0 0 6px rgba(255,215,0,0.25);
+  transition: all 0.3s ease;
+}
+
+/* hover rất nhẹ */
+.close-btn:hover {
+  background: rgba(255,215,0,0.08);
+  color: #fff2b0;
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 0 10px rgba(255,215,0,0.35),
+    0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* khi bấm */
+.close-btn:active {
+  transform: scale(0.97);
+}
+.border {
+  position: relative;
+  width: 380px;
+  padding: 40px 30px;
+  border-radius: 22px;
+  text-align: center;
+  color: #fff;
+
+  /* NỀN ĐỎ + HOA VĂN CHÌM */
+  background:
+    /* hoa văn tròn ánh kim */
+    radial-gradient(circle at 15% 25%, rgba(255,215,0,0.08), transparent 40%),
+    radial-gradient(circle at 85% 30%, rgba(255,215,0,0.06), transparent 45%),
+    radial-gradient(circle at 40% 80%, rgba(255,215,0,0.05), transparent 45%),
+
+   /* lớp ánh kim mịn – sáng hơn */
+repeating-linear-gradient(
+  45deg,
+  rgba(255,215,0,0.06) 0px,
+  rgba(255,215,0,0.06) 2px,
+  transparent 2px,
+  transparent 10px
+)
+,
+
+    /* nền đỏ chính */
+    linear-gradient(180deg, #b30000, #8f0000);
+
+  box-shadow:
+    inset 0 0 18px rgba(255,215,0,0.35),
+    0 20px 45px rgba(0,0,0,0.45);
+
+  overflow: hidden;
 }
