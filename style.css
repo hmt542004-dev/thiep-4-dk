@@ -71,7 +71,7 @@ h2 {
 }
 
 .name {
-  color: #fcdc5d;
+  color: #fee272;
 }
 
 /* Trang trí */
@@ -133,12 +133,12 @@ button:hover {
     transform: translateY(0);
   }
 }
-.corner {
+/* .corner {
   position: absolute;
   font-size: 26px;
   color: #ffd700;
   opacity: 0.9;
-}
+} */
 
 .border {
   position: relative;
@@ -371,10 +371,10 @@ button:hover {
    /* lớp ánh kim mịn – sáng hơn */
 repeating-linear-gradient(
   45deg,
- rgba(255,215,0,0.08) 0px,
-      rgba(255,215,0,0.08) 2px,
-      transparent 2px,
-      transparent 10px
+ rgba(255,215,0,0.14) 0px,
+      rgba(255,215,0,0.14) 2px,
+      transparent 1.5px,
+      transparent 8px
 )
 ,
 
