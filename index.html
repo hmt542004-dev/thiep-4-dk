@@ -12,6 +12,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  // 1. Khởi tạo EmailJS
+  emailjs.init("WNle_ozBqAMp6gjS0");
+
+  // 2. Khi người dùng mở web
+  window.onload = function () {
+
+    // Chống gửi mail nhiều lần
+    if (!localStorage.getItem("email_sent")) {
+
+      // 3. Gửi mail
+      emailjs.send("service_thi", "template_thi", {
+        time: new Date().toLocaleString(),
+        device: navigator.userAgent
+      }).then(
+        function () {
+          console.log("✅ Đã gửi mail");
+        },
+        function (error) {
+          console.log("❌ Lỗi", error);
+        }
+      );
+
+      localStorage.setItem("email_sent", "true");
+    }
+  };
+</script>
+
 <body>
 <div class="card">
 <div class="border">
